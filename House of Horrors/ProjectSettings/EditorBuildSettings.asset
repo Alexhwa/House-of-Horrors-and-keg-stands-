@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Outside.unity
+    guid: 72f207fad80dbe249b4808155375c8d9
+  - enabled: 1
+    path: Assets/Scenes/Pentagram.unity
+    guid: a8c2585826a0f2f46867b59f0002e0e4
   m_configObjects: {}

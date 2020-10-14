@@ -12,6 +12,10 @@ public class Monster : MonoBehaviour
     private GameObject scaryObj;
     private GameObject scaredExclamPnt;
 
+    public GameObject bodyPart;
+
+    public Sprite[] bodyParts;
+
     public enum MoveDir
     {
         left = -1, right = 1
@@ -30,6 +34,10 @@ public class Monster : MonoBehaviour
         scaryObj = GameObject.FindGameObjectWithTag("Player");
         scaredExclamPnt = transform.GetChild(0).gameObject;
         scaredExclamPnt.SetActive(false);
+        if (moveDir == MoveDir.right)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
     private void Update()
     {
@@ -43,6 +51,8 @@ public class Monster : MonoBehaviour
             state = MonsterState.Walking;
             scaredExclamPnt.SetActive(false);
         }
+
+        
     }
 
     // Update is called once per frame
@@ -61,5 +71,14 @@ public class Monster : MonoBehaviour
             rb.velocity = Vector3.Normalize(transform.position - scaryObj.transform.position) * runAwaySpeed;
 
         }
+    }
+    public void Die()
+    {
+        var part = Instantiate(bodyPart, transform.position + new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), 0), transform.rotation);
+        part.GetComponent<SpriteRenderer>().sprite = bodyParts[Random.Range(0, bodyParts.Length - 1)];
+        Vector3 rot = part.transform.eulerAngles;
+        rot.z = Random.Range(0, 360);
+        part.transform.eulerAngles = rot;
+        Destroy(gameObject);
     }
 }
