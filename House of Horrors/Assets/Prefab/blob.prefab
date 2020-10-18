@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 5426205319628087944, guid: 55ab045f8bb84564097cf6046b745c49,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.3066038, b: 0.3066038, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 1227566997761286446}
   - component: {fileID: 1227566997761286445}
   - component: {fileID: 862141842821120219}
+  - component: {fileID: 4786689497930256801}
   m_Layer: 8
   m_Name: blob
   m_TagString: Monster
@@ -155,7 +156,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0e079224ba7734d6683a2406f7c4a620, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -173,8 +174,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 263978969
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 10d3518437439bd40b3951c79402cc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -207,7 +208,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1227566997761286445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,12 +227,12 @@ MonoBehaviour:
   bodyPart: {fileID: 7339804121914201127, guid: 36168fedf8b015b47a5af3b1c581c743,
     type: 3}
   bodyParts:
-  - {fileID: 21300000, guid: f3dba4a3ced6390469613d559e1e8768, type: 3}
-  - {fileID: 21300000, guid: 0fa97f28b01d30d479d7d2a63c12575a, type: 3}
-  - {fileID: 21300000, guid: a888135c1718d814cb079f8b97073b9d, type: 3}
-  - {fileID: 21300000, guid: 7c2291f3dd34adf48bef594d9f9e6f84, type: 3}
-  - {fileID: 21300000, guid: d227840143479524aa0ab5dfa8fa10d2, type: 3}
-  - {fileID: 21300000, guid: d8dd19841751c154da94b813c8cf9f85, type: 3}
+  - {fileID: 21300000, guid: 6b79079733603cc449923ca9ee7c2246, type: 3}
+  - {fileID: 21300000, guid: e999d24e60f66124098d698f474a8759, type: 3}
+  - {fileID: 21300000, guid: dccdc31a985bd7d45919b7e3fbd5c18b, type: 3}
+  - {fileID: 21300000, guid: edb3387b6f97f0b4abb4a141acaff7e9, type: 3}
+  - {fileID: 21300000, guid: c45dad6a8357f7d4fac591db8e4efc36, type: 3}
+  - {fileID: 21300000, guid: cc5b705c10a470c4394e0df555c7a828, type: 3}
   moveDir: 1
   state: 0
 --- !u!70 &862141842821120219
@@ -249,4 +250,20 @@ CapsuleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.0025481582, y: 0.9640043}
   m_Size: {x: 1.0688852, y: 2.168118}
+  m_Direction: 0
+--- !u!70 &4786689497930256801
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227566997761286433}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.010384142, y: 0.668425}
+  m_Size: {x: 0.35579717, y: 1.3992342}
   m_Direction: 0
