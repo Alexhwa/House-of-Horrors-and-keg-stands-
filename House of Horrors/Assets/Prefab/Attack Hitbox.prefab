@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2532485638247640610}
   - component: {fileID: 2532485638247640608}
   - component: {fileID: 3408688116281105118}
+  - component: {fileID: -5601626922713265515}
   m_Layer: 10
   m_Name: Attack Hitbox
   m_TagString: Untagged
@@ -121,7 +122,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c423e801f3066d44d9758e67252bc6b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieTime: 0.2
   targets:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &-5601626922713265515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2532485638247640621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598a1018c134d04db668a2813fc6db5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieTime: 0.5

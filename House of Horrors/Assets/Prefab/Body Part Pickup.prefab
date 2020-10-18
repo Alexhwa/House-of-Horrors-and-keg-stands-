@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7339804121914201126}
   - component: {fileID: 7339804121914201124}
   m_Layer: 11
-  m_Name: Body Part
+  m_Name: Body Part Pickup
   m_TagString: BodyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,10 +68,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -184104491
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a888135c1718d814cb079f8b97073b9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b79079733603cc449923ca9ee7c2246, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,6 +95,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.8}
+  m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.89, y: 1.07}
   m_Direction: 0

@@ -20,7 +20,10 @@ public class Layerer : MonoBehaviour
         Comparer compare = new Comparer();
         Array.Sort(needsLayering, compare);
 
-        print(StringFrmArray(needsLayering));
+        for(int i = 0; i < needsLayering.Length; i++)
+        {
+            needsLayering[i].GetComponentInChildren<SpriteRenderer>().sortingOrder = i;
+        }
     }
     private string StringFrmArray(Transform[] array)
     {
