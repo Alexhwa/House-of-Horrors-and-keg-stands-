@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pentagram.unity
     guid: a8c2585826a0f2f46867b59f0002e0e4
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: 2eac21edc1e51cd41befa028d5a22bd9
   m_configObjects: {}

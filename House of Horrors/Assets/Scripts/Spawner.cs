@@ -33,19 +33,20 @@ public class Spawner : MonoBehaviour
     private void SpawnMonster()
     {
         var spawnedMonster = monsters[Random.Range(0, monsters.Length)];
-        var monserScript = spawnedMonster.GetComponent<Monster>();
-        Instantiate(spawnedMonster, 
+        var monsterInst = Instantiate(spawnedMonster, 
             transform.position + new Vector3(0, Random.Range(-YOffset, YOffset), 0), 
             transform.rotation);
+        var monsterScript = monsterInst.GetComponent<Monster>();
+
         state = SpawnState.Spawning;
 
         if (spawnsLeft)
         {
-            monserScript.moveDir = Monster.MoveDir.left;
+            monsterScript.moveDir = Monster.MoveDir.left;
         }
         else
         {
-            monserScript.moveDir = Monster.MoveDir.right;
+            monsterScript.moveDir = Monster.MoveDir.right;
         }
 
         StartCoroutine(ResetSpawnState(Random.Range(-1f, 1f) * variance + frequency));

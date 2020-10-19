@@ -2,28 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CapsuleCollider2D))]
 
 public class Dragable : MonoBehaviour
 {
     private Vector3 screenPoint;
     private Vector3 offset;
 
+    public bool beingDragged;
+    public bool disabled = false;
+
     void OnMouseDown()
     {
-        screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        if (!disabled)
+        {
+            screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
-        offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-
+            offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+        }
     }
 
     void OnMouseDrag()
     {
-        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
+        if (!disabled)
+        {
+            Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 
-        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
-        transform.position = curPosition;
+            Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
+            transform.position = curPosition;
 
+            beingDragged = true;
+        }
     }
-
+    private void OnMouseUp()
+    {
+        if (!disabled)
+        {
+            beingDragged = false;
+        }
+    }
 }

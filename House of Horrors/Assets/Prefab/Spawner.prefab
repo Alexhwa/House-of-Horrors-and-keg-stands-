@@ -48,6 +48,8 @@ MonoBehaviour:
   - {fileID: 1227566997761286433, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c, type: 3}
   - {fileID: 3903718599958781785, guid: 62307de1771c2ce4ab93d212c4be8abc, type: 3}
   - {fileID: 1529939351466233224, guid: 4ace6b63d0c2647499a0b2043b69b099, type: 3}
-  frequency: 5
+  - {fileID: 4556811326408317034, guid: 0146fdd5264a9e042bceafefee8a10c0, type: 3}
+  - {fileID: 6133289990688519620, guid: 1a5b2ee41671104459075a158212ca65, type: 3}
+  frequency: 4
   variance: 0.5
   spawnsLeft: 1

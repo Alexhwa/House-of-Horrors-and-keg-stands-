@@ -46,9 +46,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Amalgm
+    uniqueID: 1282989763
+    locked: 0
   - name: Monster
     uniqueID: 263978969
     locked: 0
+  - name: Attack
+    uniqueID: 202627039
+    locked: 0
   - name: Part
     uniqueID: 4110862805
+    locked: 0
+  - name: UI
+    uniqueID: 4170157485
     locked: 0

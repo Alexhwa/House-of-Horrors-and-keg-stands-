@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
 
     [Header("Attacking")]
-    public KeyCode attackKey;
     public GameObject attackHitbox;
     private Transform attackPos;
     public float attackCooldown;
@@ -31,7 +30,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        inventory = FindObjectOfType<Inventory>();
         attackPos = transform.GetChild(1);
     }
 
@@ -39,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "BodyPart" && state != PlayerState.Attacking)
         {
+            inventory = FindObjectOfType<Inventory>();
             inventory.AddPart(collision.gameObject.GetComponent<SpriteRenderer>().sprite);
             Destroy(collision.gameObject);
         }
@@ -59,7 +58,7 @@ public class PlayerController : MonoBehaviour
     }
     private void DoAttack()
     {
-        if (Input.GetKeyDown(attackKey) && gameObject.GetComponentInChildren<Attack>() == null)
+        if (Input.GetMouseButtonDown(0) && gameObject.GetComponentInChildren<Attack>() == null)
         {
             var hitbox = Instantiate(attackHitbox, transform);
             hitbox.transform.localPosition = attackPos.localPosition;

@@ -15,4 +15,9 @@ public class SceneChange : MonoBehaviour
             SceneManager.LoadScene(sceneToLoad);
         }
     }
+
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(sceneToLoad); 
+    }
 }

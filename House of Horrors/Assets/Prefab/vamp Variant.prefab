@@ -1,31 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2820936497613323896
+--- !u!1001 &3329350260408891723
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 90064642, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: e80717e83b33f61428901fd61f252e47,
-        type: 2}
     - target: {fileID: 1227566997761286433, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: m_Name
-      value: clown Variant
+      value: vamp
       objectReference: {fileID: 0}
     - target: {fileID: 1227566997761286444, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.81283
+      value: -1.69
       objectReference: {fileID: 0}
     - target: {fileID: 1227566997761286444, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.874133
+      value: -3.79
       objectReference: {fileID: 0}
     - target: {fileID: 1227566997761286444, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
@@ -76,43 +71,43 @@ PrefabInstance:
         type: 3}
       propertyPath: bodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 2f27e2ae8f67c8e4eaf7f70173c60ad7,
+      objectReference: {fileID: 21300000, guid: 6a20ba5baf19f694c8b5ed34be75eccb,
         type: 3}
     - target: {fileID: 1227566997761286445, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: bodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 12d0de50eacd0ca429cff2f726c1dd45,
+      objectReference: {fileID: 21300000, guid: 36a3d12383c11d3469b2da267e4faac2,
         type: 3}
     - target: {fileID: 1227566997761286445, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: bodyParts.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: d8082549be28a874ca710080fb0fc2a8,
+      objectReference: {fileID: 21300000, guid: 8fd0ea4d63af8554197e43977e127ba6,
         type: 3}
     - target: {fileID: 1227566997761286445, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: bodyParts.Array.data[3]
       value: 
-      objectReference: {fileID: 21300000, guid: b0e79a0cd9f80cb458d6412e7f0ef37a,
+      objectReference: {fileID: 21300000, guid: a936d5b4093c90f4a950c25f67c3768c,
         type: 3}
     - target: {fileID: 1227566997761286445, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: bodyParts.Array.data[4]
       value: 
-      objectReference: {fileID: 21300000, guid: c14d82ebd45837e409410c88fc5de5fa,
+      objectReference: {fileID: 21300000, guid: 283bd02c6aed2e84eb8779ad3e220e84,
         type: 3}
     - target: {fileID: 1227566997761286445, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: bodyParts.Array.data[5]
       value: 
-      objectReference: {fileID: 21300000, guid: 1f4bd297b57115e47bfac8991e6e4ee3,
+      objectReference: {fileID: 21300000, guid: e38d82843cdacff45a278c2fe083a0ae,
         type: 3}
     - target: {fileID: 1227566997761286447, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 685655a61dad2af4382de379f6e23c77,
+      objectReference: {fileID: 21300000, guid: 1760c49f2465dd341b8550acc2675bb6,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c8b2b8ecae96ae4a9ba458ba9828c7c, type: 3}

@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 1227566997761286445}
   - component: {fileID: 862141842821120219}
   - component: {fileID: 4786689497930256801}
+  - component: {fileID: 90064642}
   m_Layer: 8
   m_Name: blob
   m_TagString: Monster
@@ -175,7 +176,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 263978969
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 10d3518437439bd40b3951c79402cc1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -221,9 +222,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c833ad2372aac5d4badc27513840a338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
-  runAwaySpeed: 3
-  minScareDist: 3.96
+  moveSpeed: 2
+  runAwaySpeed: 3.5
+  minScareDist: 2.7
+  scaredTime: 1
   bodyPart: {fileID: 7339804121914201127, guid: 36168fedf8b015b47a5af3b1c581c743,
     type: 3}
   bodyParts:
@@ -267,3 +269,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.010384142, y: 0.668425}
   m_Size: {x: 0.35579717, y: 1.3992342}
   m_Direction: 0
+--- !u!95 &90064642
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227566997761286433}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 898dd3640b2b9494aa464dc1a37f54fc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
