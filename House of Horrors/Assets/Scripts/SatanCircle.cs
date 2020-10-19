@@ -8,6 +8,7 @@ public class SatanCircle : MonoBehaviour
     private Inventory inventory;
 
     public GameObject amalgam;
+    public GameObject spawnPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +33,7 @@ public class SatanCircle : MonoBehaviour
                 return;
             }
         }
-        var amalgInst = Instantiate(amalgam, transform.position, transform.rotation).GetComponent<Amalgam>();
+        var amalgInst = Instantiate(amalgam, spawnPoint.transform).GetComponent<Amalgam>();
         List<Sprite> parts = new List<Sprite>();
         foreach (SatanSpot e in spots)
         {
